@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="nav-logo"  href="index.html"> <img src="gymogo.jpeg" height="40px" width="40px"></a>
+            <a class="navbar-brand" href="#">PATIL'S GYM</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="abour.html">About</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="div" style="color: rgb(9, 9, 59); font-size: 36px; background-color: rgb(175, 209, 224); height:150vh; ">
+        <h1 style="margin-left: 35vb ;">"Fitness is not a destination, it’s a way of life."</h1><br>
+        <!-- <p style="margin-left: 85vb;margin-top:30px;font-size: 20px;">Contact NO.: 9337883923</p>
+        <p style="margin-left: 85vb;font-size: 20px;">Gmail:rageja9659@skrank.com</p>
+        <p style="margin-left: 85vb;font-size: 20px;">Feel free to reach us !!</p> -->
+
+
+        <div class="card" style="width: 18rem; margin-left: 500px; font-size: 16px;">
+          <div class="card-header">
+            Patil's Gym
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Owner : Mr.Sunil Patil</li>
+            <li class="list-group-item">Contact NO.: 9337883923</li>
+            <li class="list-group-item">Gmail:rageja9659@skrank.com</li>
+          </ul>
+          
+        </div>
+<br>
+
+        <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="hurry and no worry..!" data-bs-content="Join the gym make everything possible. It's very engaging. Right?" style="margin-left: 550px;">fill the form</button>
+
+        <form class="row g-3 needs-validation" id="contactForm" novalidate style="margin:10vh 10vb;">
+          <div class="col-md-4" style="font-size: 20px;">
+            <label for="validationCustom01" class="form-label">First name</label>
+            <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="col-md-4" style="font-size: 20px;">
+            <label for="validationCustom02" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="col-md-4" style="font-size: 20px;">
+            <label for="validationCustomUsername" class="form-label">Username</label>
+            <div class="input-group has-validation">
+              <span class="input-group-text" id="inputGroupPrepend">@</span>
+              <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">Please choose a username.</div>
+            </div>
+          </div>
+          <div class="col-md-6" style="font-size: 20px;">
+            <label for="validationCustom03" class="form-label">State</label>
+            <input type="text" class="form-control" id="validationCustom03" required value="Maharashtra">
+            <div class="invalid-feedback">Maharashtra.</div>
+          </div>
+          <div class="col-md-3" style="font-size: 20px;">
+            <label for="validationCustom04" class="form-label">City</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Choose...</option>
+              <option>Pune</option>
+              <option>Nanded</option>
+              <option>Dharashiv</option>
+              <option>Sambhaji-nagar</option>
+            </select>
+            <div class="invalid-feedback">Please select a valid city.</div>
+          </div>
+          <div class="col-md-3" style="font-size: 20px;">
+            <label for="validationCustom05" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="validationCustom05" required>
+            <div class="invalid-feedback">Please provide a valid zip.</div>
+          </div>
+          <div class="col-12">
+            <div class="form-check" style="font-size: 20px;">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                <a href="term.html">Agree to terms and conditions</a>
+              </label>
+              <div class="invalid-feedback" style="font-size: 20px;">You must agree before submitting.</div>
+            </div>
+          </div>
+          <div class="col-12" style="font-size: 20px;">
+            <button class="btn btn-primary" type="submit" onclick="greet()">Submit form</button>
+          </div>
+        </form>
+      </div>
+      
+      <script>
+         function greet() {
+          let greeting = alert("THANK YOU FOR JOINING US..!!")
+          document.getElementById().greeting;
+         }
+        
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            let FirstName = document.getElementById('validationCustom01').value;
+            let LastName = document.getElementById('validationCustom02').value;
+            let State = document.getElementById('validationCustom03').value;
+            let City = document.getElementById('validationCustom04').value;
+            let Zip = document.getElementById('validationCustom05').value;
+            
+            let url = `https://api.whatsapp.com/send?phone=937388932&text=FirstName:%20${FirstName}%0ALastName:%20${LastName}%0AState:%20${State}%0ACity:%20${City}%0AZip:%20${Zip}`;
+            
+            window.open(url, '_blank');
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl)
+            })
+        });
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>  
+</body>
+</html>
